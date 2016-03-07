@@ -1,0 +1,79 @@
+body {
+  width: 80%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #F9F9F9;
+  text-align: center;
+}
+
+.title {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+
+.title h1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.thumbnail {
+  margin-top: 20px;
+}
+
+.thumbnail {
+  position: relative;
+}
+
+.cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #2c2c2c;
+  opacity: 0;
+  text-align: center;
+  transition: opacity .4s;
+  vertical-align: middle;
+}
+
+.cover i {
+  vertical-align: middle;
+  color: white;
+  font-size: 3em;
+}
+
+.cover:hover {
+  opacity: 0.5;
+}
+
+.col-xs-12.col-md-3.effect {
+  margin: auto;
+}
+
+.logo-img {
+  position: relative;
+  width: 100%;
+  vertical-align: middle;
+  line-height: 100px;
+}
+
+.logo-img img {
+  max-width: 100%;
+  height: 50px;
+}
+
+a:link, a:active, a:visited {
+  color: black;
+}
+
+.header-logo-wrap .img {
+  color: #000;
+  font-size: 50px;
+}

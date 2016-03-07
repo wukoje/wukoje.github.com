@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html class="no-js flat">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Apparel - dress e-shop</title>
+	
+	<!-- fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+
+	<!-- styles -->
+	<link rel="stylesheet" href="css/s.css">
+	<link rel="stylesheet" href="css/themes/theme_flat_cyan.css" class="current-theme">
+
+	<!-- HEAD SCRIPTS -->
+	<script src="js/3rd-party-libs/modernizr.custom.js"></script>
+</head><body>
+	<div class="header-content">
+	<div class="top-line" id="top-line">
+		<div class="container">
+			<div class="row text-right">
+				<button class="btn-sitemenu-toggle btn-toggle visible-xs"><span class="glyphicon glyphicon-align-justify"></span></button>
+
+				<div class="mobile-menu">
+					<a href="#" class="btn-city-select pull-left um_popup-switch col-xs-12" data-popup-container=".city-link">Los Angeles</a>
+					<a href="#" class="btn-account login col-xs-6" data-toggle="modal" data-target="#modal_login">Login</a>
+					<a href="#" class="btn-account reg col-xs-6" data-toggle="modal" data-target="#modal_registration"><span class="btn-text">Registration</span></a>
+					<a href="template-page.html" class="btn-about col-xs-12">About us</a>
+					<a href="template-page.html" class="btn-how-to-buy col-xs-12">How to buy</a>
+					<a href="template-page.html" class="btn-delivery active col-xs-12">Shipping and payment</a>
+					<a href="template-page.html" class="btn-warranty col-xs-12">Guarantee</a>
+				</div>
+				
+				<div class="header-buttons pull-left">
+					<div class="header-btn">
+						<div class="info-icon btn-text">i</div>
+						<div class="header-links">
+							<a href="template-page.html" class="btn-about flaticon-shopping63">About us</a>
+							<a href="template-page.html" class="btn-how-to-buy flaticon-wallet">How to buy</a>
+							<a href="template-page.html" class="btn-delivery active flaticon-small59">Shipping and payment</a>
+							<a href="template-page.html" class="btn-warranty flaticon-checked10">Guarantee</a>
+						</div>
+					</div><!-- .header-btn -->
+					<div class="header-btn">
+						<div class="flaticon-user12 btn-logreg btn-text"></div>
+						<div class="header-links">
+							<a href="#" class="btn-account login" data-toggle="modal" data-target="#modal_login">Login</a>
+							<a href="#" class="btn-account reg" data-toggle="modal" data-target="#modal_registration"><span class="btn-text">Registration</span></a>
+						</div>
+					</div><!-- .header-btn -->
+					<div class="header-btn">
+						<span class="btn-city-select btn-text um_popup-switch" data-popup-container=".city-link"
+							title="Change city" data-toggle="tooltip" data-placement="bottom">Los Angeles</span>
+						<div class="city-link">
+							<div class="city-select-panel apparel-popup um_popup-content">
+								<button class="btn-closebtn btn-city-close um_popup-switch"
+								data-popup-container=".city-link"><span class="btn-text"></span></button>
+								<h3>Choose your city</h3>
+								<form action="#" method="post" class="form_city-name">
+									<label>
+										<strong class="label-text">or just type a city name:</strong>
+										<input type="text" class="textinput city-name">
+									</label>
+								</form>
+								<p>Your city: <span class="current-city">Los Angeles</span></p>
+								<ul>
+									<li><span>New York</span> </li>
+									<li><span>Washington, DC</span></li>
+									<li class="active"><span>Los Angeles</span></li>
+									<li><span>Boston</span></li>
+									<li><span>Portland</span></li>
+									<li><span>Chicago</span></li>
+									<li><span>Phoenix</span></li>
+									<li><span>San Diego</span></li>
+									<li><span>Dallas</span></li>
+									<li><span>Austin</span></li>
+									<li><span>Denver</span></li>
+									<li><span>Memphis</span></li>
+									<li><span>Nashville</span></li>
+									<li><span>Las Vegas</span></li>
+									<li><span>Houston</span></li>
+									<li><span>Baltimore</span></li>
+									<li><span>Louisville</span></li>
+									<li><span>Philadelphia</span></li>
+									<li><span>Dallas</span></li>
+									<li><span>Indianapolis</span></li>
+									<!-- ^ It's important! There is should be no one space between closing bracket 
+									of previous tag and opening bracket of current tag -->
+								</ul>
+								<hr>
+								<button class="btn-close-modal btn-city-close um_popup-switch"
+								data-popup-container=".city-link"><span class="btn-text">It's my city</span></button>
+							</div><!-- .city-select-panel.apparel-popup -->
+						</div><!-- .city-link -->
+					</div><!-- .header-btn -->
+				</div><!-- .header-buttons.pull-left -->
+
+				<div class="header-buttons pull-right">
+					<a href="account-favorites.html" class="btn-favorites header-btn" title="Go to favorites" data-toggle="tooltip" data-placement="bottom"><span class="quan">6</span></a>
+					<a href="compare.html" class="btn-compare header-btn" title="Go to compare page" data-toggle="tooltip" data-placement="bottom"><span class="quan">83</span></a>
+					<div class="header-btn">
+						<div class="basket-toggle-btn btn-text um_popup-switch"
+							data-popup-container="#basket-container"
+							data-popup-animation="class"
+							title="Open basket" data-toggle="tooltip" data-placement="bottom"><span class="quan">3</span></div>
+						<div class="basket-container" id="basket-container">
+							<div id="basket-popup" class="basket-popup um_popup-content">
+								<div class="table-wrapper">
+									<table class="basket-table basket-small">
+	<tbody>
+		<tr>
+	<td class="img-column">
+		<div class="img-container big-image-opener">
+			<a href="product-page.html">
+				<img src="img/products/thumbnails/demo1.jpg" alt="Item">
+			</a>
+		</div>
+	</td>
+	<td class="data-container">
+		<div class="item-name"><a href="product-page.html">Brand</a></div>
+		<span class="short-description">scarf</span>
+		<button class="btn-item-action delete"><span class="btn-text">Remove</span></button>
+		<button class="btn-item-action waitlist switchable" title="To waitlist" data-toggle-text="Remove from waitlist"></button>
+	</td>
+	<td class="price quantity">
+		<div class="input-wrapper quantity-wrapper">
+			<button class="btn-quantity-change minus"></button>
+			<input type="text" class="item-quantity" value="1">
+			<button class="btn-quantity-change plus"></button>
+		</div>
+		<div class="out-of-stock-info">
+			<span class="text">Not available</span>
+			<button><span class="btn-text">Report Admission</span></button>
+		</div>
+		<span class="price price-usd">
+			<span class="price-old">$3330</span>
+			$55
+		</span>
+	</td><!-- /price.quantity-->	
+</tr>		<tr>
+	<td class="img-column">
+		<div class="img-container big-image-opener">
+			<a href="product-page.html">
+				<img src="img/products/thumbnails/demo1.jpg" alt="Item">
+			</a>
+		</div>
+	</td>
+	<td class="data-container">
+		<div class="item-name"><a href="product-page.html">Brand</a></div>
+		<span class="short-description">scarf</span>
+		<button class="btn-item-action delete"><span class="btn-text">Remove</span></button>
+		<button class="btn-item-action waitlist switchable" title="To waitlist" data-toggle-text="Remove from waitlist"></button>
+	</td>
+	<td class="price quantity">
+		<div class="input-wrapper quantity-wrapper">
+			<button class="btn-quantity-change minus"></button>
+			<input type="text" class="item-quantity" value="1">
+			<button class="btn-quantity-change plus"></button>
+		</div>
+		<div class="out-of-stock-info">
+			<span class="text">Not available</span>
+			<button><span class="btn-text">Report Admission</span></button>
+		</div>
+		<span class="price price-usd">
+			<span class="price-old">$3330</span>
+			$55
+		</span>
+	</td><!-- /price.quantity-->	
+</tr>				<tr>
+	<td class="img-column">
+		<div class="img-container big-image-opener">
+			<a href="product-page.html">
+				<img src="img/products/thumbnails/demo1.jpg" alt="Item">
+			</a>
+		</div>
+	</td>
+	<td class="data-container">
+		<div class="item-name"><a href="product-page.html">Brand</a></div>
+		<span class="short-description">scarf</span>
+		<button class="btn-item-action delete"><span class="btn-text">Remove</span></button>
+		<button class="btn-item-action waitlist switchable" title="To waitlist" data-toggle-text="Remove from waitlist"></button>
+	</td>
+	<td class="price quantity">
+		<div class="input-wrapper quantity-wrapper">
+			<button class="btn-quantity-change minus"></button>
+			<input type="text" class="item-quantity" value="1">
+			<button class="btn-quantity-change plus"></button>
+		</div>
+		<div class="out-of-stock-info">
+			<span class="text">Not available</span>
+			<button><span class="btn-text">Report Admission</span></button>
+		</div>
+		<span class="price price-usd">
+			<span class="price-old">$3330</span>
+			$55
+		</span>
+	</td><!-- /price.quantity-->	
+</tr>		<tr>
+	<td class="img-column">
+		<div class="img-container big-image-opener">
+			<a href="product-page.html">
+				<img src="img/products/thumbnails/demo1.jpg" alt="Item">
+			</a>
+		</div>
+	</td>
+	<td class="data-container">
+		<div class="item-name"><a href="product-page.html">Brand</a></div>
+		<span class="short-description">scarf</span>
+		<button class="btn-item-action delete"><span class="btn-text">Remove</span></button>
+		<button class="btn-item-action waitlist switchable" title="To waitlist" data-toggle-text="Remove from waitlist"></button>
+	</td>
+	<td class="price quantity">
+		<div class="input-wrapper quantity-wrapper">
+			<button class="btn-quantity-change minus"></button>
+			<input type="text" class="item-quantity" value="1">
+			<button class="btn-quantity-change plus"></button>
+		</div>
+		<div class="out-of-stock-info">
+			<span class="text">Not available</span>
+			<button><span class="btn-text">Report Admission</span></button>
+		</div>
+		<span class="price price-usd">
+			<span class="price-old">$3330</span>
+			$55
+		</span>
+	</td><!-- /price.quantity-->	
+</tr>		<tr>
+	<td class="img-column">
+		<div class="img-container big-image-opener">
+			<a href="product-page.html">
+				<img src="img/products/thumbnails/demo1.jpg" alt="Item">
+			</a>
+		</div>
+	</td>
+	<td class="data-container">
+		<div class="item-name"><a href="product-page.html">Brand</a></div>
+		<span class="short-description">scarf</span>
+		<button class="btn-item-action delete"><span class="btn-text">Remove</span></button>
+		<button class="btn-item-action waitlist switchable" title="To waitlist" data-toggle-text="Remove from waitlist"></button>
+	</td>
+	<td class="price quantity">
+		<div class="input-wrapper quantity-wrapper">
+			<button class="btn-quantity-change minus"></button>
+			<input type="text" class="item-quantity" value="1">
+			<button class="btn-quantity-change plus"></button>
+		</div>
+		<div class="out-of-stock-info">
+			<span class="text">Not available</span>
+			<button><span class="btn-text">Report Admission</span></button>
+		</div>
+		<span class="price price-usd">
+			<span class="price-old">$3330</span>
+			$55
+		</span>
+	</td><!-- /price.quantity-->	
+</tr>	</tbody>
+</table><!-- /basket-big -->								</div>
+								<span class="total-price">Total: <span class="price-usd">$225 </span></span>
+								<a href="order-step1.html" class="btn-buy medium"><span class="btn-text">Add to cart</span></a>
+							</div>
+						</div>
+					</div><!-- .header-btn -->
+					<div class="header-btn search-wrap">
+						<button class="btn-search-toggle"></button>
+						<form action="#" method="post" id="form-search-mobile" class="">
+							<div class="input-wrapper">
+								<input type="text" class="textinput" placeholder="We have over 2 million products...">
+							</div>
+							<div id="ajax-search-popup">
+	<div class="ajax-search-item clearfix">
+		<div class="img-container">
+			<a href="product-page.html" title="Brand">
+				<img src="img/catalog/tshirt1.jpg" alt="T-Shirt 1">
+			</a>
+		</div><!-- /img-container -->
+		<div class="buy-actions">
+			<div class="triangled-wrapper">
+				<button class="btn-buy small triangled switchable" title="Add to cart" data-toggle-text="Added to cart"></button>
+			</div>
+		</div><!-- /buy-actions -->
+		<div class="main-data">
+			<div class="main-description">
+				<a href="product-page.html" class="ajax-search-item-name" title="Brand">Brand</a>
+				<div class="short-description">t-shirt</div>
+			</div>
+			<div class="price"><span class="price-usd">$3330</span></div>
+		</div><!-- /main-data -->
+	</div><!-- /ajax-search-item -->
+	<div class="ajax-search-item clearfix">
+		<div class="img-container">
+			<a href="product-page.html" title="Brand">
+				<img src="img/catalog/tshirt2.jpg" alt="T-Shirt 1">
+			</a>
+		</div><!-- /img-container -->
+		<div class="buy-actions">
+			<div class="triangled-wrapper">
+				<button class="btn-buy small triangled switchable" title="Add to cart" data-toggle-text="Added to cart"></button>
+			</div>
+		</div><!-- /buy-actions -->
+		<div class="main-data">
+			<div class="main-description">
+				<a href="product-page.html" class="ajax-search-item-name" title="Brand">Brand</a>
+				<div class="short-description">t-shirt</div>
+			</div>
+			<div class="price"><span class="price-usd">$55</span></div>
+		</div><!-- /main-data -->
+	</div><!-- /ajax-search-item -->
+	<div class="ajax-search-item clearfix">
+		<div class="img-container">
+			<a href="product-page.html" title="Brand">
+				<img src="img/catalog/tshirt3.jpg" alt="T-Shirt 1">
+			</a>
+		</div><!-- /img-container -->
+		<div class="buy-actions">
+			<div class="triangled-wrapper">
+				<button class="btn-buy small triangled switchable" title="Add to cart" data-toggle-text="Added to cart"></button>
+			</div>
+		</div><!-- /buy-actions -->
+		<div class="main-data">
+			<div class="main-description">
+				<a href="product-page.html" class="ajax-search-item-name" title="Brand">Brand</a>
+				<div class="short-description">t-shirt</div>
+			</div>
+			<div class="price"><span class="price-usd">$55</span></div>
+		</div><!-- /main-data -->
+	</div><!-- /ajax-search-item -->
+	<div class="ajax-search-item clearfix">
+		<div class="img-container">
+			<a href="product-page.html" title="Brand">
+				<img src="img/catalog/pants1.jpg" alt="T-Shirt 1">
+			</a>
+		</div><!-- /img-container -->
+		<div class="buy-actions">
+			<div class="triangled-wrapper">
+				<button class="btn-buy small triangled switchable" title="Add to cart" data-toggle-text="Added to cart"></button>
+			</div>
+		</div><!-- /buy-actions -->
+		<div class="main-data">
+			<div class="main-description">
+				<a href="product-page.html" class="ajax-search-item-name" title="Brand">Brand</a>
+				<div class="short-description">t-shirt</div>
+			</div>
+			<div class="price"><span class="price-usd">$55</span></div>
+		</div><!-- /main-data -->
+	</div><!-- /ajax-search-item -->
+	<div class="ajax-search-item clearfix">
+		<div class="img-container">
+			<a href="product-page.html" title="Brand">
+				<img src="img/catalog/shorts1.jpg" alt="T-Shirt 1">
+			</a>
+		</div><!-- /img-container -->
+		<div class="buy-actions">
+			<div class="triangled-wrapper">
+				<button class="btn-buy small triangled switchable" title="Add to cart" data-toggle-text="Added to cart"></button>
+			</div>
+		</div><!-- /buy-actions -->
+		<div class="main-data">
+			<div class="main-description">
+				<a href="product-page.html" class="ajax-search-item-name" title="Brand">Brand</a>
+				<div class="short-description">t-shirt</div>
+			</div>
+			<div class="price"><span class="price-usd">$55</span></div>
+		</div><!-- /main-data -->
+	</div><!-- /ajax-search-item --><!-- /catalog-item-container -->
+	<div class="ajax-search-item clearfix">
+		<div class="img-container">
+			<a href="product-page.html" title="Brand">
+				<img src="img/catalog/shirt4.jpg" alt="T-Shirt 1">
+			</a>
+		</div><!-- /img-container -->
+		<div class="buy-actions">
+			<div class="triangled-wrapper">
+				<button class="btn-buy small triangled switchable" title="Add to cart" data-toggle-text="Added to cart"></button>
+			</div>
+		</div><!-- /buy-actions -->
+		<div class="main-data">
+			<div class="main-description">
+				<a href="product-page.html" class="ajax-search-item-name" title="Brand">Brand</a>
+				<div class="short-description">t-shirt</div>
+			</div>
+			<div class="price"><span class="price-usd">$55</span></div>
+		</div><!-- /main-data -->
+	</div><!-- /ajax-search-item -->
+</div>						</form>
+					</div><!-- .header-btn -->
+				</div><!-- .header-buttons.pull-right -->
+				
+				<div class="header-logo-wrap">
+					<a href="main.html" class="main-logo">
+						<span class="img">Apparel</span>
+						<!-- <img src="img/logo.png" alt="Логотип компании" class='img'> -->
+					</a>
+				</div>
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /top-line -->
+	<div class="top-line-helper"></div>
+
+
+</div><!-- /header-content -->
+
+<!-- Color scheme chooser. Commented because of ThemeForest requirement. -->
+<!-- <div class="settings-wrap apparel-popup">
+	<button class="btn-settings-toggle um_popup-switch"
+	data-popup-container=".settings-wrap"
+	data-popup-animation="class"></button>
+	<div class="um_popup-content" id="settings-panel">
+		<h3>Configuration panel</h3>
+		<p>Select color scheme:</p>
+		<ul>
+			<li class="theme-demo flat_blue" data-theme='flat_lightblue'>
+			<div></div><span class="text">LightBlue</span>
+			</li><li class="theme-demo flat_cyan" data-theme='flat_cyan'>
+			<div></div><span class="text">Cyan</span>
+			</li><li class="theme-demo flat_purple" data-theme='flat_purple'>
+			<div></div><span class="text">Purple</span>
+			</li><li class="theme-demo flat_red" data-theme='flat_red'>
+			<div></div><span class="text">Red</span>
+			</li><li class="theme-demo flat_yellow" data-theme='flat_yellow'>
+			<div></div><span class="text">Yellow</span></li>
+		</ul>
+		<hr>
+		<button class="settings-close btn-close-modal um_popup-switch"
+		data-popup-container=".settings-wrap"
+		data-popup-animation="class"><span class="btn-text">Save</span></button>
+	</div>
+</div> -->
+
+	
+
+
+
+<!-- modals and popups -->
+<div class="modal fade modal-form" id="modal_login" tabindex="-1">
+	<div class="modal-dialog">
+		<button class="btn-closebtn" data-toggle="modal" data-target="#modal_login"><span class="btn-text"></span></button>
+		<form method="post" action="#" class="form_login">
+	<h2><span class="header-text">Sign in</span></h2>
+	<div class="switch-form-block">or <button class="btn-form-switch" data-toggle="modal" data-target="#modal_registration, #modal_login" type="button"><span class="btn-text">sign up</span></button></div>
+	<label class="textinput-wrapper">
+		<span class="label-text">Login</span>
+		<input type="text" name="login-username" id="login-username" class="textinput" required>
+	</label>
+	<label class="textinput-wrapper">
+		<span class="label-text">Password</span>
+		<input type="password" name="login-password" id="login-password" class="textinput password" required>
+		<a href="#" class="btn-input password-toggle"></a>
+	</label>
+	
+	<div class="remember-container">
+		<label class="checkbox-styled pull-left">
+			<input type="checkbox" name="remember" id="remember">
+			<span class="checkbox-content">Remember me</span>
+		</label>
+		<a href="#" class="forgot-pass">Forgot password?</a>
+	</div>
+	<button class="btn-submit"><span class="btn-text">Login</span></button>
+	<p class="social-text">Login with social account:</p>
+	<ul class="social-list">
+		<li><a href="#" class="social tw"><span class="icon-container sprite"></span></a></li>
+		<li><a href="#" class="social vk"><span class="icon-container sprite"></span></a></li>
+		<li><a href="#" class="social ok"><span class="icon-container sprite"></span></a></li>
+		<li><a href="#" class="social fb"><span class="icon-container sprite"></span></a></li>
+		<li><a href="#" class="social ya"><span class="icon-container sprite"></span></a></li>	
+	</ul>
+</form>	</div>
+</div>
+
+<div class="modal fade modal-form" id="modal_registration" tabindex="-1">
+	<div class="modal-dialog">
+		<button class="btn-closebtn" data-toggle="modal" data-target="#modal_registration"><span class="btn-text"></span></button>
+		<form method="post" action="#" class="form_registration">
+	<h2><span class="header-text">Sign up</span></h2>
+	<div class="switch-form-block">or <button class="btn-form-switch" data-toggle="modal" data-target="#modal_registration, #modal_login" type="button"><span class="btn-text">sign in</span></button></div>
+	<div class="radio-group">
+		<label class="radio-styled">
+			<input type="radio" name="auto-generation" id="auto-generation" value="true">
+			<span class="radio-content">Generate login and password</span>
+		</label>
+		<label class="radio-styled">
+			<input type="radio" name="auto-generation" id="auto-generation-false" value="false" checked>
+			<span class="radio-content">Specify login and password</span>
+		</label>
+	</div>
+	<label class="textinput-wrapper">
+		<span class="label-text">Login<span class="asterisk-required">*</span></span>
+		<input type="text" name="reg-username" id="reg-username" placeholder="Login" class="textinput" required>
+	</label>
+	<label class="textinput-wrapper">
+		<span class="label-text">Password<span class="asterisk-required">*</span></span>
+		<input type="password" name="reg-password" id="reg-password" placeholder="Password" class="textinput password" required>
+		<a href="#" class="btn-input password-toggle"></a>
+	</label>
+	<label class="textinput-wrapper">
+		<span class="label-text"><span class="inner-text">Password again<span class="asterisk-required">*</span></span></span>
+		<input type="password" name="reg-password-repeat" id="reg-password-repeat" placeholder="Password again" class="textinput password" required>
+		<a href="#" class="btn-input password-toggle"></a>
+	</label>
+	<label class="textinput-wrapper">
+		<span class="label-text">E-mail<span class="asterisk-required">*</span></span>
+		<input type="email" name="email" id="email" placeholder="E-mail" class="textinput" required>
+	</label>
+	<label class="textinput-wrapper">
+		<span class="label-text">Name</span>
+		<input type="text" name="first-name" id="first-name" placeholder="Name" class="textinput">
+	</label>
+	<label class="textinput-wrapper">
+		<span class="label-text">Surname</span>
+		<input type="text" name="last-name" id="last-name" placeholder="Surname" class="textinput">
+	</label>
+	<div class="anti-robot clearfix">
+		<label class="textinput-wrapper">
+			<input type="text" name="captcha" id="captcha" placeholder="Picture code" class="textinput" required>
+			<span class="label-text">Picture code<span class="asterisk-required">*</span></span>
+			<span class="captcha"><img src="img/captcha.jpg" alt="Picture code"></span>
+		</label>
+	</div>
+	<div class="required-info"><span class="asterisk-required">*</span>Fields marked with asterisk are required</div>			
+	<label class="checkbox-styled">
+		<input type="checkbox" name="accept-agreement" id="accept-agreement" class="checkbox-styled">
+		<span class="checkbox-content">I agree with <a href="#">Terms and Conditions</a></span>
+	</label>
+	<button class="btn-submit"><span class="btn-text">Sign Up</span></button>
+</form>
+	</div>
+</div>
+
+<div class="modal" id="success-modal" tabindex="-1" role="dialog" aria-labelledby="success-modal" aria-hidden="true">
+		<div class="form-success">
+			<button class="btn-closebtn" data-toggle="modal" data-target="#success-modal"><span class="btn-text"></span></button>
+			<span class="flaticon-accept3"></span>
+			<span class="text">Registration is successful!</span>
+		</div>
+</div>
+<div class="modal" id="fail-modal" tabindex="-1" role="dialog" aria-labelledby="fail-modal" aria-hidden="true">
+		<div class="form-fail">
+			<button class="btn-closebtn" data-toggle="modal" data-target="#fail-modal"><span class="btn-text"></span></button>
+			<span class="flaticon-cancel1"></span>
+			<span class="text">Warning! Here is error!</span>
+		</div>
+</div>
+
+<div class="added2basket">
+	<span>Added</span> <span>to cart</span>
+</div>
+<div class="popup-on-buy no-size">
+	Please select a size
+</div>
+<div class="popup-on-buy no-color">
+	Please select a color
+</div>	<div class="container template-page">
+	<div class="row">
+	
+			<nav class="main-menu-wrap">
+	<button class="btn-mainmenu-toggle"><span class="btn-text">Catalog</span></button>
+	<ul class="main-menu toggleable">
+		
+		
+		<li><a href="catalog.html">Dress</a>
+		</li>
+		
+		<li><a href="catalog.html">Shoes</a>
+		</li>
+		
+		<li><a href="catalog.html">Accessories</a>
+		</li>
+		
+		<li class="discount"><a href="catalog.html">Discounts</a>
+		</li>
+		
+		<li class="new"><a href="catalog.html">NEW</a>
+		</li>
+		
+		<li><a href="catalog.html">Brands</a>
+		</li>
+		
+		
+	</ul><!-- /main-menu -->
+	<div class="stone"></div>
+</nav>		<div class="col-sm-12">
+			<ul class="breadcrumbs">
+				<li>
+					<a href="main.html" class="btn-silver"><span></span></a>
+				</li>
+				<li>
+					<span class="bcrumb">About Store</span>
+				</li>
+			</ul>
+		</div><!-- /breadcrumbs -->
+		<div class="col-sm-12">
+			<h2>About Store</h2>
+			<div class="banner">
+				<img src="img/template-logo.jpg" alt="Dress">
+			</div>
+			<p>The restaurant service cost (15%) included in the bill; in the bar and cafe - 10-15% account only for waiter service; Taxi - tips are included in the fare, however indoor water park connects the lower Indus basin, and to the watchman was not asleep and was kind, he brings food and drink, flowers and aromatic sticks.</p>
+			<p>Monument Middle Ages essentially declares hearth of centuries of irrigated agriculture, it is from 8.00 to 11.00 is a brisk trade with the boats loaded with all kinds of tropical fruits, vegetables, orchids, cans of beer.</p> 
+			<p>Banja Luka reflects deep parrot, there are remains of buildings of the ancient Roman settlement Akvinka - "Aquincum".</p> 
+			<h3>Peasant platypus: Highlights</h3>
+			<p>Bay of Bengal declares outdoor bamboo, despite the fact that all are built in the original Slavic, Turkish style. For breakfast, the British prefer oatmeal and corn flakes, however the temperature pushes Mediterranean bush, because it is here that you can get from the French-speaking, Walloon part of the city in Flemish.</p>
+			<p>Warehouse mountain, to a first approximation, bites peasant Mediterranean bush, despite this, the reverse exchange of the Bulgarian currency at departure is limited. </p>
+			<p>Liege gunsmith, despite the fact that the royal authority in the hands of the executive power - the Cabinet of Ministers, a landscaped park, in the beginning of the century gentlemen could go to them without removing the cylinder.</p>
+			<h4>1. A common official language: a hypothesis and theory</h4>
+			<table class="compare-table">
+				<tbody>
+					<tr>
+						<th>Manufacturer</th>
+						<td>Brand</td>
+						<td>Brand</td>
+					</tr>
+					<tr>
+						<th>Country</th>
+						<td>France</td>
+						<td>China</td>
+					</tr>
+					<tr>
+						<th>Material</th>
+						<td>cotton</td>
+						<td>silk</td>
+					</tr>
+					<tr>
+						<th>Consistence</th>
+						<td>175 kcal</td>
+						<td>235 kcal</td>
+					</tr>
+					<tr>
+						<th>Season</th>
+						<td>95% - cotton, 5% - spandex</td>
+						<td>95% - silk, 5% - spandex</td>
+					</tr>
+					<tr>
+						<th>Lining material</th>
+						<td>100% - polyester</td>
+						<td>100% - polyester</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>The Turkish baths are not made to swim naked so of towels construct skirt, and the area is outside the whale, the male figure is set to the right of the female. </p>
+			<p>Wine Festival takes place in the homestead museum Georgikon, ibid track begins a temporary watercourse official language, such as "fan" means "fan-wind", "match" - "stick-whet-fire."</p>
+		</div>
+	</div><!-- /row -->
+	
+</div><!-- /container -->	<footer class="page-footer">
+	<div class="container">
+		<div class="row">
+			<section class="footer-catalog col-sm-4 col-xs-12">
+				<h2>Apparel Shop catalog</h2>
+				<div class="row">
+					<ul class="footer-catalog-menu col-xs-6">
+						<li><a href="#" title="For Women">For Women</a></li>
+						<li><a href="#" title="For Men">For Men</a></li>
+						<li><a href="#" title="For Children">For Children</a></li>
+					</ul>
+					<ul class="footer-catalog-menu col-xs-6">
+						<li><a href="#" title="New Arrivals">New Arrivals</a></li>
+						<li><a href="#" title="Discounts and Promotions">Discounts and Promotions </a></li>
+						<li><a href="#" title="Bestsellers">Bestsellers</a></li>
+					</ul>
+					<ul class="footer-catalog-menu col-xs-6">
+						<li><a href="#" title="Dresses">Dresses</a></li>
+						<li><a href="#" title="Shoes">Shoes</a></li>
+						<li><a href="#" title="Accessories">Accessories</a></li>
+					</ul>
+				</div><!-- /row -->
+			</section><!-- /footer-catalog.col-sm-4 -->
+			<section class="footer-service col-sm-3 hidden-xs">
+				<h2>Services and help</h2>
+				<ul class="footer-service-menu">
+					<li><a href="#" title="About store">About store</a></li>
+					<li><a href="#" title="How to buy">How to buy</a></li>
+					<li><a href="#" title="Shipping and Payment">Shipping and Payment</a></li>
+					<li><a href="#" title="Warranty">Warranty</a></li>
+				</ul>
+			</section><!-- /footer-service.col-sm-3 -->
+			<section class="footer-socials col-sm-5 col-lg-4 col-lg-offset-1 col-xs-12">
+				<h2>Contact Us:</h2>
+				<ul class="footer-contacts-menu">
+					<li>
+						<a href="tel:88007779999" title="Call us">
+							<span class="icon flaticon-telephone63"></span>
+							<span class="text">1-800-APPAREL</span>
+						</a>
+					</li>
+					<li>
+						<a href="mailto:apparel-shop@mail.ru" title="E-mail us">
+							<span class="icon flaticon-packet"></span>
+							<span class="text">apparel-shop@appa.rel</span>
+						</a>
+					</li>
+					<li><hr></li>
+					<li class="footer-social-wrap">
+						<a href="twitter.com/apparel_shop" title="twitter.com/apparel_shop">
+							<span class="icon social tw sprite"></span>
+							<span class="text">twitter.com/apparel_shop</span>
+						</a>
+					</li>
+					<li class="footer-social-wrap">
+						<a href="facebook.com/apparel_shop" title="facebook.com/apparel_shop">
+							<span class="icon social fb sprite"></span>
+							<span class="text">facebook.com/apparel_shop</span>
+						</a>
+					</li>
+					<li class="footer-social-wrap">
+						<a href="apparel_shop" title="apparel_shop">
+							<span class="icon social skype sprite"></span>
+							<span class="text">apparel_shop</span>
+						</a>
+					</li>
+				</ul><!-- /footer-socials-menu -->
+				<form action="#" method="post" class="form-group subscribe-form">
+					<div class="input-group">
+						<input type="text" class="textinput form-control" id="subscribe-email" placeholder="Want to subscribe? Enter email here">
+						<span class="input-group-btn">
+							<button class="btn btn-subscribe flaticon-right20"></button>
+						</span>
+					</div>
+				</form><!-- .form-group -->
+			</section><!-- /footer-socials.col-sm-5 -->
+		</div><!-- /row -->
+	</div><!-- /container -->
+	<div class="footer-of-footer">
+		<div class="container">
+			<div class="row">
+				<div class="copyright col-sm-8 col-xs-12">
+					<p>2015 © APPAREL SHOP 1.9 -  dress, shoes and accessories e-shop.</p>
+					<p class="hidden-xs">Over 2.5 million products from leading brands</p>
+				</div><!-- /copyright.col-sm-8.col-xs-12 -->
+				<div class="contacts col-sm-4 hidden-xs">
+					
+				</div>
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /footer-of-footer -->
+</footer>
+
+<!-- Respond.js - IE8 support of media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!-- selectivizr - IE8- support for css3 classes like :checked -->
+<!--[if lt IE 9]>
+	<script src="selectivizr-min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- basic js libraries -->
+<script src="js/3rd-party-libs/jquery-1.12.0.js"></script>
+<script src="js/3rd-party-libs/bootstrap.js"></script>
+<script src="js/3rd-party-libs/jquery.mobile.touchevents.js"></script>
+<script src="js/3rd-party-libs/jquery.mousewheel.js"></script>
+
+<!-- js plugins -->
+<script src="js/3rd-party-libs/jquery.mCustomScrollbar.js"></script>
+<script src="js/3rd-party-libs/jquery.formstyler.js"></script>
+<script src="js/3rd-party-libs/jquery.nouislider.all.js"></script>
+<script src="js/3rd-party-libs/spin.js"></script>
+<script src="js/3rd-party-libs/jquery.zoom.js"></script>
+
+<!-- my own js scripts -->
+
+<!-- theme switch script is commented because of ThemeForest' moderator requirement -->
+<!-- <script src="js/theme-switch.js"></script> -->
+
+<script src="js/custom-libs/um_popups.js"></script>
+<script src="js/custom-libs/um_menu.js"></script>
+<script src="js/custom-libs/um_basket.js"></script>
+<script src="js/helpers.js"></script>
+<script src="js/allpages.js"></script>
+
+<!-- ATTENTION! There are more scripts included at the end of some
+pages, which are specific to that particular pages --></body>
+</html>
